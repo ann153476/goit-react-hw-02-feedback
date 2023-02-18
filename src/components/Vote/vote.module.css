@@ -4,9 +4,14 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(255, 0, 0, 0.433),rgba(255, 166, 0, 0.427),rgba(255, 255, 0, 0.499),rgba(255, 166, 0, 0.427),rgba(255, 0, 0, 0.433));
+    background-image: linear-gradient(rgba(255, 0, 0, 0.433),rgba(255, 166, 0, 0.427),rgba(255, 255, 0, 0.499),rgba(255, 166, 0, 0.427),rgba(255, 0, 0, 0.433)); 
     color: rgb(94, 7, 7);
 } 
+@media screen and (max-width:500px){
+    .box{
+    flex-direction: column;
+    }
+}
 h4{
     color: rgb(213, 38, 3);
 }
@@ -20,6 +25,7 @@ h4{
     text-align: center;
     width: 200px;
     height: 200px;
+    margin: 10px;
 }
 .box p,
 .box h4,
