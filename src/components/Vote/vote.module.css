@@ -7,8 +7,9 @@
     background-image: linear-gradient(rgba(255, 0, 0, 0.433),rgba(255, 166, 0, 0.427),rgba(255, 255, 0, 0.499),rgba(255, 166, 0, 0.427),rgba(255, 0, 0, 0.433)); 
     color: rgb(94, 7, 7);
 } 
-@media screen and (max-width:500px){
+@media screen and (max-width:700px){
     .box{
+    padding-top: 30px;
     flex-direction: column;
     justify-content: flex-start;
     }
@@ -16,7 +17,8 @@
 h4{
     color: rgb(213, 38, 3);
 }
-.box>div{
+.box>section{
+    box-sizing: border-box;
     border: 1px solid rgba(110, 5, 5, 0.448);
     border-radius: 8px;
     background-color: rgba(255, 0, 170, 0.101);
@@ -24,7 +26,7 @@ h4{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 200px;
+    width: 220px;
     height: 200px;
     margin: 10px;
 }
@@ -35,7 +37,7 @@ h4{
 }
 .box button,
 .total{
-    background-color: rgba(238, 255, 0, 0.279);
+    background-color: rgba(238, 255, 0, 0.142);
     border: 1px solid rgba(110, 5, 5, 0.448);
     border-radius: 4px;
     color: rgb(94, 7, 7);
@@ -44,4 +46,7 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.box button:hover{
+    background-color: rgba(238, 255, 0, 0.336);
 }

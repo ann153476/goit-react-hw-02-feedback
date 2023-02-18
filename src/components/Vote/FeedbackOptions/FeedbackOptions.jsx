@@ -1,14 +1,18 @@
+import PropTypes from 'prop-types';
 
-
-const VoteActions = ({leaveVote}) => {
+const FeedbackOptions = ({leaveVote}) => {
     return (
-        <div>
+        <section>
             <h4>Leave your vote</h4>
             <button onClick={()=> leaveVote("good")}>good</button>
             <button onClick={()=> leaveVote("neutral")}>neutral</button>
             <button onClick={()=> leaveVote("bad")}>bad</button>
-        </div>
+        </section>
     )
 }
 
-export default VoteActions;
+FeedbackOptions.propTypes = {
+    onLeaveFeedback: PropTypes.func.isRequired,
+};
+
+export default FeedbackOptions;
