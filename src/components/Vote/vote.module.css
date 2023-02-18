@@ -10,6 +10,7 @@
 @media screen and (max-width:500px){
     .box{
     flex-direction: column;
+    justify-content: flex-start;
     }
 }
 h4{
