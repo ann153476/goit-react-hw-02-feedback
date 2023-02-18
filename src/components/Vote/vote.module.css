@@ -1,0 +1,36 @@
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.433),rgba(255, 166, 0, 0.427),rgba(255, 255, 0, 0.499),rgba(255, 166, 0, 0.427),rgba(255, 0, 0, 0.433));
+    color: rgb(94, 7, 7);
+} 
+h4{
+    color: rgb(213, 38, 3);
+}
+.box>div{
+    border: 1px solid rgba(110, 5, 5, 0.448);
+    border-radius: 8px;
+    background-color: rgba(255, 0, 170, 0.101);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+.box p,
+.box h4,
+.box button{
+    margin: 5px;
+}
+.box button,
+.total{
+    background-color: rgba(238, 255, 0, 0.279);
+    border: 1px solid rgba(110, 5, 5, 0.448);
+    border-radius: 4px;
+    color: rgb(94, 7, 7);
+    margin: 15px;
+}
