@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+/*@import-normalize; /* bring in normalize.css styles */
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -55,7 +55,7 @@ table{
 }
 
 input{
-  -webkit-appearance: none;
+  appearance: none;
   border-radius: 0;
 }
 
