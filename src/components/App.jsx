@@ -1,6 +1,4 @@
-import Vote from "./Vote/vote"
+import Vote from './Vote/Vote';
 export const App = () => {
-  return (
-    <Vote/>
-  );
+  return <Vote />;
 };

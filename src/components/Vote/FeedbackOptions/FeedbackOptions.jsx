@@ -1,18 +1,28 @@
 import PropTypes from 'prop-types';
 
-const FeedbackOptions = ({ leaveVote }) => {
+const FeedbackOptions = ({ options, leaveVote }) => {
   return (
     <section>
       <h4>Leave your vote</h4>
-      <button onClick={() => leaveVote('good')}>good</button>
-      <button onClick={() => leaveVote('neutral')}>neutral</button>
-      <button onClick={() => leaveVote('bad')}>bad</button>
+
+      {options.map(option => (
+        <button key={option} onClick={() => leaveVote(option)}>
+          {option}
+        </button>
+      ))}
     </section>
   );
 };
 
 FeedbackOptions.propTypes = {
-  onLeaveFeedback: PropTypes.func.isRequired,
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      good: PropTypes.string.isRequired,
+      neutral: PropTypes.string.isRequired,
+      bad: PropTypes.string.isRequired,
+    })
+  ),
+  leaveVote: PropTypes.func.isRequired,
 };
 
 export default FeedbackOptions;
